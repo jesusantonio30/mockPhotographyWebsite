@@ -1,0 +1,24 @@
+@import "tailwindcss"; 
+
+* {
+    font-size: 16px;
+    font-family: "Cormorant Garamond", serif;
+    color: #1f1f1f;
+}
+
+a {
+    text-transform: uppercase;
+}
+
+@theme {
+    --breakpoint-*: initial;
+    --breakpoint-mobile: 0rem;
+    --breakpoint-tablet: 50.625rem;
+    --breakpoint-desktop: 75rem;
+}
+
+@layer components {
+    .tm-logo {
+        @apply w-[128px]
+    }
+}
