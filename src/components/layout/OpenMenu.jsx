@@ -7,7 +7,7 @@ import { navItems } from '../../utils/NavArray';
 const OpenMenu = ({ toggled, toggle }) => {
 
   return (
-    <nav className='bg-[#F2F2F2] absolute top-0 left-0 w-screen h-screen tablet:p-6 mobile:p-3'>
+    <nav className='bg-[#F2F2F2] opacity-85 absolute top-0 left-0 w-screen h-screen tablet:p-6 mobile:p-3'>
       <div className='relative flex justify-center items-center tablet:mt-7.5 mobile:mt-3'>
         <NavLink to='/'>
           <TMLogo className='tm-logo'/>

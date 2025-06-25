@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Twirl as Hamburger } from 'hamburger-react';
-import OpenMenu from './OpenMenu';
 
-const HamburgerComponent = () => {
-
-    const [open, setOpen] = useState(false);
+const HamburgerComponent = ({ open, setOpen }) => {
 
   return (
     <>
@@ -15,7 +12,6 @@ const HamburgerComponent = () => {
           size={32}
           rounded
         />
-        {open && <OpenMenu toggle={setOpen} toggled={open}/>}
     </>
   )
 }
