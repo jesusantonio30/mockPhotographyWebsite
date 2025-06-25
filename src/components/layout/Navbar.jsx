@@ -1,62 +1,35 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import TMLogo from '../../assets/Icons/TM-logo.svg?react'
-import Menu from '../../assets/Icons/menu.svg?react'
+import { navItems } from '../../utils/NavArray';
+import HamburgerComponent from './HamburgerComponent';
 
 
 const Navbar = () => {
+
   return (
     <>
-        <nav className='h-[95px] flex flex-col place-content-center top-0 mobile:hidden tablet:hidden desktop:block'>
-            <ul className='flex place-content-around items-center'>
-                <li>
-                    <NavLink to='/'>
-                        Home
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to='about'>
-                        About
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to='services'>
-                        Packages
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to='/'>
-                        <TMLogo className='tm-logo'/>
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to='portfolio'>
-                        Portfolio
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to='blog'>
-                        Blog
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to='contact'>
-                        Contact
-                    </NavLink>
-                </li>
+        <nav className='p-6 mobile:hidden tablet:hidden desktop:block'>
+            <ul className='flex justify-around'>
+                {navItems.map((item, index) => (
+                    <li key={index}>
+                        <NavLink to={item === 'home' ? '/' : item}>
+                            {item}
+                        </NavLink>
+                    </li>
+                ))}
             </ul>
         </nav>
-        <nav className='h-[95px] flex flex-col place-content-center top-0 desktop:hidden'>
-            <ul className='flex place-content-between mx-12.5 items-center'>
-                <li className='mx-auto'>
+        <nav className='p-6 desktop:hidden'>
+            <ul className='flex items-center'>
+                <li className='w-22'></li>
+                <li className='ml-auto'>
                     <NavLink>
                         <TMLogo className='tm-logo'/>
                     </NavLink>
                 </li>
-                <li>
-                    <button>
-                        <Menu />
-                    </button>
+                <li className='ml-auto pr-10'>
+                    <HamburgerComponent />
                 </li>
             </ul>
         </nav>
