@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <>
-        <nav className='p-6 mobile:hidden tablet:hidden desktop:block'>
+        <nav className='bg-white opacity-85 p-6 mobile:hidden tablet:hidden desktop:block'>
             <ul className='flex justify-around'>
                 {navItems.map((item, index) => (
                     <li key={index}>
@@ -20,7 +20,7 @@ const Navbar = () => {
                 ))}
             </ul>
         </nav>
-        <nav className='p-6 desktop:hidden'>
+        <nav className='bg-white opacity-85 p-6 desktop:hidden'>
             <ul className='flex items-center'>
                 <li className='w-22'></li>
                 <li className='ml-auto'>
