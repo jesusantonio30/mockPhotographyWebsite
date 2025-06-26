@@ -7,7 +7,7 @@ const AppLayout = () => {
   return (
     <>
       <Navbar />
-      <section className='w-screen flex justify-center'>
+      <section >
         <Outlet />
       </section>
       <Footer />
