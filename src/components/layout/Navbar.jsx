@@ -16,7 +16,7 @@ const Navbar = () => {
             <ul className='flex justify-around'>
                 {navItems.map((item, index) => (
                     <li key={index}>
-                        <NavLink to={item === 'home' ? '/' : item}>
+                        <NavLink to={item === 'home' || typeof item === 'object' ? '/' : item}>
                             {item}
                         </NavLink>
                     </li>
