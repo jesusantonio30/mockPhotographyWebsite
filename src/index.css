@@ -22,4 +22,32 @@ a {
     .tm-logo {
         @apply w-[128px]
     }
+
+    .footer {
+        @apply desktop:flex desktop:flex-col
+    }
+
+    .footer-nav-ul {
+        @apply desktop:flex desktop:justify-around
+    }
+
+    .footer-contents {
+        @apply desktop:flex desktop:flex-col desktop:items-center desktop:gap-6
+    }
+
+    .footer-contents-stack {
+        @apply desktop:flex desktop:flex-col desktop:items-center desktop:pt-10 desktop:gap-6
+    }
+
+        .footer-contents-stack-text {
+            @apply text-center desktop:max-w-6/10
+        }
+
+    .footer-contents-socials {
+        @apply desktop:flex desktop:justify-center desktop:gap-6
+    }
+
+    .footer-contents-copyright {
+        @apply desktop:flex desktop:justify-center
+    }
 }
