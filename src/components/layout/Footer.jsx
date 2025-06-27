@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { navItems } from '../../utils/NavArray'
 import { arrangeArr } from '../../utils/Helpers/arrayHelpers'
 import useWindowWidth from '../../hooks/useWindowWidth'
@@ -18,7 +18,7 @@ const Footer = () => {
 
   return (
     <footer className='footer'>
-        <nav className='py-10'>
+        <nav className='footer-nav'>
           <ul className='footer-nav-ul'>
             {
               width >= 1200 ? (
@@ -42,7 +42,6 @@ const Footer = () => {
           </ul>
         </nav>
         <section className='footer-contents'>
-
           <div className='footer-contents-stack'>
             <div className='w-[78px]'>
               <FlowerIcon />
@@ -53,20 +52,17 @@ const Footer = () => {
               love, one moment at a time. Your timeless memories, expertly preserved.
             </p>
           </div>
-
           <div className='footer-contents-socials'>
               <FacebookIcon />
               <LinkedInIcon />
               <XIcon />
               <YTIcon />
           </div>
-
           <div className='footer-contents-copyright'>
             <p>
               Copyright. All Rights Reserved.
             </p>
           </div>
-
         </section>
     </footer>
   )

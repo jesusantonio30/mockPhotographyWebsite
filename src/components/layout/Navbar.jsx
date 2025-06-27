@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import TMLogo from '../../assets/Icons/TM-logo.svg?react'
 import { navItems } from '../../utils/NavArray';
@@ -16,7 +16,7 @@ const Navbar = () => {
     <>
 
         {width >= 1200 ? (
-            <nav className='bg-white opacity-85 p-6'>
+            <nav className='navbar'>
                 <ul className='flex justify-around'>
                     {navItems.map((item, index) => (
                         <li key={index}>
@@ -28,7 +28,7 @@ const Navbar = () => {
                 </ul>
             </nav>
         ) : (
-            <nav className={' bg-white opacity-85 p-6'}>
+            <nav className='navbar'>
                 <ul className='flex items-center'>
                     <li className='w-22'></li>
                     <li className='ml-auto'>
