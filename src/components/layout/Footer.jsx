@@ -49,7 +49,7 @@ const Footer = () => {
         </nav>
         <section className='footer-contents'>
 
-          <div className='footer-contents-stack desktop:order-1 mobile:order-2'>
+          <div className='footer-contents-stack'>
             <div className='w-[78px]'>
               <FlowerIcon />
             </div>
@@ -60,14 +60,14 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className='footer-contents-socials desktop:order-2 mobile:order-1'>
+          <div className='footer-contents-socials'>
               <FacebookIcon />
               <LinkedInIcon />
               <XIcon />
               <YTIcon />
           </div>
 
-          <div className='footer-contents-copyright desktop:order-3 mobile:order-3'>
+          <div className='footer-contents-copyright'>
             <p>
               Copyright. All Rights Reserved.
             </p>

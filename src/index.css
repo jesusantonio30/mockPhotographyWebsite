@@ -36,7 +36,7 @@ a {
     }
 
     .footer-contents-stack {
-        @apply flex flex-col items-center desktop:pt-10 gap-6 mobile:p-6
+        @apply flex flex-col items-center desktop:pt-10 gap-6 mobile:p-6 desktop:order-1 mobile:order-2
     }
 
         .footer-contents-stack-text {
@@ -44,10 +44,10 @@ a {
         }
 
     .footer-contents-socials {
-        @apply flex justify-center gap-6 mobile:pt-6
+        @apply flex justify-center gap-6 mobile:pt-6 desktop:order-2 mobile:order-1
     }
 
     .footer-contents-copyright {
-        @apply desktop:flex desktop:justify-center mobile:pb-6
+        @apply desktop:flex desktop:justify-center mobile:pb-6 desktop:order-3 mobile:order-3
     }
 }
