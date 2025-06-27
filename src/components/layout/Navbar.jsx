@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import TMLogo from '../../assets/Icons/TM-logo.svg?react'
 import { navItems } from '../../utils/NavArray';
+import NavigationItems from '../ui/NavigationItems';
 import useWindowWidth from '../../hooks/useWindowWidth';
 import HamburgerComponent from './HamburgerComponent';
 import OpenMenu from './OpenMenu';
@@ -17,15 +18,7 @@ const Navbar = () => {
 
         {width >= 1200 ? (
             <nav className='navbar'>
-                <ul className='flex justify-around'>
-                    {navItems.map((item, index) => (
-                        <li key={index}>
-                            <NavLink to={item === 'home' || typeof item === 'object' ? '/' : item}>
-                                {item}
-                            </NavLink>
-                        </li>
-                    ))}
-                </ul>
+                <NavigationItems items={navItems} className={'flex justify-around'}/>
             </nav>
         ) : (
             <nav className='navbar'>

@@ -2,6 +2,7 @@ import React from 'react'
 import { navItems } from '../../utils/NavArray'
 import { arrangeArr } from '../../utils/Helpers/arrayHelpers'
 import useWindowWidth from '../../hooks/useWindowWidth'
+import NavigationItems from '../ui/NavigationItems'
 import { NavLink } from 'react-router-dom'
 import FlowerIcon from '../../assets/Icons/tessaMorgan.svg?react'
 import FacebookIcon from '../../assets/Icons/facebook.svg?react'
@@ -20,26 +21,9 @@ const Footer = () => {
     <footer className='footer'>
         <nav className='footer-nav'>
           <ul className='footer-nav-ul'>
-            {
-              width >= 1200 ? (
-                navItems.map((item, index) => (
-                  <li key={index}>
-                    <NavLink to={item === 'home' || typeof item === 'object' ? '/' : item}>
-                      {item}
-                    </NavLink>
-                  </li>
-                ))
-              ) : (
-                newNavItems.map((item, index) => (
-                  <li key={index}>
-                    <NavLink to={item === 'home' || typeof item === 'object' ? '/' : item}>
-                      {item}
-                    </NavLink>
-                  </li>
-                ))
-              )
-            }
+            {width >= 1200 ? <NavigationItems items={navItems} className={'footer-nav-ul'}/> : <NavigationItems items={newNavItems} className={'footer-nav-ul'}/>}
           </ul>
+          
         </nav>
         <section className='footer-contents'>
           <div className='footer-contents-stack'>
