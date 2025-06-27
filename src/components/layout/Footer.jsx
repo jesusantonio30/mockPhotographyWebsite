@@ -24,7 +24,7 @@ const Footer = () => {
 
   return (
     <footer className='footer'>
-        <nav className='py-10 bg-green-500'>
+        <nav className='py-10'>
           <ul className='footer-nav-ul'>
             {
               width >= 1200 ? (

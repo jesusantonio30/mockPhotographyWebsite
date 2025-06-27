@@ -28,7 +28,7 @@ a {
     }
 
     .footer-nav-ul {
-        @apply desktop:flex desktop:justify-around
+        @apply flex mobile:flex-col mobile:items-center mobile:gap-6 desktop:flex-row desktop:justify-around
     }
 
     .footer-contents {
@@ -44,10 +44,10 @@ a {
         }
 
     .footer-contents-socials {
-        @apply flex justify-center gap-6 mobile:mt-6
+        @apply flex justify-center gap-6 mobile:pt-6
     }
 
     .footer-contents-copyright {
-        @apply desktop:flex desktop:justify-center
+        @apply desktop:flex desktop:justify-center mobile:pb-6
     }
 }
