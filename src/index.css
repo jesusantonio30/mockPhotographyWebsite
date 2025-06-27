@@ -24,7 +24,7 @@ a {
     }
 
     .footer {
-        @apply desktop:flex desktop:flex-col
+        @apply flex flex-col
     }
 
     .footer-nav-ul {
@@ -32,19 +32,19 @@ a {
     }
 
     .footer-contents {
-        @apply desktop:flex desktop:flex-col desktop:items-center desktop:gap-6
+        @apply flex flex-col items-center gap-6
     }
 
     .footer-contents-stack {
-        @apply desktop:flex desktop:flex-col desktop:items-center desktop:pt-10 desktop:gap-6
+        @apply flex flex-col items-center desktop:pt-10 gap-6 mobile:p-6
     }
 
         .footer-contents-stack-text {
-            @apply text-center desktop:max-w-6/10
+            @apply text-center desktop:max-w-6/10 mobile:max-w-8/10
         }
 
     .footer-contents-socials {
-        @apply desktop:flex desktop:justify-center desktop:gap-6
+        @apply flex justify-center gap-6 mobile:mt-6
     }
 
     .footer-contents-copyright {
