@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { navItems } from '../../utils/NavArray'
 import { arrangeArr } from '../../utils/Helpers/arrayHelpers'
+import useWindowWidth from '../../hooks/useWindowWidth'
 import { NavLink } from 'react-router-dom'
 import FlowerIcon from '../../assets/Icons/tessaMorgan.svg?react'
 import FacebookIcon from '../../assets/Icons/facebook.svg?react'
@@ -11,14 +12,7 @@ import YTIcon from '../../assets/Icons/youtube.svg?react'
 
 const Footer = () => {
 
-  const [width, setWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-
-    return () => window.removeEventListener('resize', handleResize);
-  }, [])
+  const width = useWindowWidth();
 
   const newNavItems = arrangeArr(navItems, item => typeof item === 'object');
 
