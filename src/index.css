@@ -29,6 +29,10 @@ a {
         @apply bg-white opacity-85 p-6
     }
 
+    .navbar-openMenu-aside {
+        @apply flex justify-center items-center bg-[#F2F2F2] absolute w-full h-screen left-0 tablet:p-6 mobile:p-3 origin-top overflow-hidden
+    }
+
 
     /* FOOTER */
     .footer {

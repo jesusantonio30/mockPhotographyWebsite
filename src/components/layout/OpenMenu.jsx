@@ -1,6 +1,4 @@
-import React from 'react'
-import { Twirl as Hamburger } from 'hamburger-react';
-import TMLogo from '../../assets/Icons/TM-logo.svg?react'
+import React, { useEffect, useRef } from 'react'
 import { NavLink } from 'react-router-dom';
 import { navItems } from '../../utils/NavArray';
 import { motion } from 'framer-motion';
@@ -19,16 +17,31 @@ const menuVariants = {
   }
 };
 
-const OpenMenu = ({ toggled }) => {
+const OpenMenu = ({ toggled, toggle }) => {
+
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    if (toggled && menuRef.current) {
+      menuRef.current.focus();
+    }
+  }, [toggled])
 
   return (
     <motion.aside
+      ref={menuRef}
+      tabIndex={-1}
+
+      role='dialog'
+      aria-modal='true'
+      aria-label='Main Navigation'
+
       variants={menuVariants}
       initial="close"
       animate={toggled ? "open" : "close"}
       exit="close"
 
-      className='flex justify-center items-center bg-[#F2F2F2] absolute w-full h-screen left-0 tablet:p-6 mobile:p-3 origin-top overflow-hidden'>
+      className='navbar-openMenu-aside'>
       <ul className='flex flex-col items-center'>
         {navItems.map((item, index) => (
           <li key={index}>

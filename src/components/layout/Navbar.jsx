@@ -36,8 +36,8 @@ const Navbar = () => {
                         />
                     </li>
                 </ul>
-                <AnimatePresence>
-                    {open && <OpenMenu toggled={open}/>}
+                <AnimatePresence mode='wait'>
+                    {open && <OpenMenu toggled={open} toggle={setOpen} key="menu"/>}
                 </AnimatePresence>
             </nav>
         )}
