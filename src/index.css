@@ -1,21 +1,37 @@
-@import "tailwindcss"; 
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import "tailwindcss";
 
-* {
-    font-size: 16px;
-    font-family: "Cormorant Garamond", serif;
-    color: #1f1f1f;
+@layer base {
+    * {
+        font-size: 16px;
+        font-family: "Cormorant Garamond", serif;
+        color: #1f1f1f;
+    }
+
+    a {
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 3.625rem;
+    }
 }
 
-a {
-    text-transform: uppercase;
-    font-size: 18px;
-}
+
 
 @theme {
     --breakpoint-*: initial;
     --breakpoint-mobile: 0rem;
     --breakpoint-tablet: 50.625rem;
     --breakpoint-desktop: 75rem;
+
+    --font-vibes: "Great Vibes", cursive;
+    --font-cormorant: "Cormorant Garamond", serif;
+
+    --color-vanilla: #D1BEA1;
+    --color-sandrift: #A89982;
 }
 
 @layer components {

@@ -7,7 +7,7 @@ const AppLayout = () => {
   return (
     <>
       <Navbar />
-      <section >
+      <section className='main-container'>
         <Outlet />
       </section>
       <Footer />

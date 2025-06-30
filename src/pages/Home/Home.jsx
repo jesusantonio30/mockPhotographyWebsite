@@ -1,12 +1,10 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
+import React from 'react';
+import Hero from './homeComponents/Hero';
 
 const Home = () => {
   return (
     <>
-      <h1>
-        Home
-      </h1>
+      <Hero />
     </>
   )
 }

@@ -45,7 +45,7 @@ const OpenMenu = ({ toggled, toggle }) => {
       <ul className='flex flex-col items-center'>
         {navItems.map((item, index) => (
           <li key={index}>
-            <NavLink to={item === 'home' ? '/' : item} className='leading-15'>
+            <NavLink to={item === 'home' ? '/' : item} className='leading-15 font-cormorant'>
               {typeof item === 'string' ? item : null}
             </NavLink>
           </li>
