@@ -3,7 +3,7 @@ import ButtonMain from '../../../components/ui/ButtonMain';
 
 const Hero = () => {
   return (
-    <div className='hero'>
+    <section className='hero'>
       <div className="overlay flex-center">
         <div className="hero-content-wrapper">
           <p className='hero-timeless'>
@@ -15,7 +15,7 @@ const Hero = () => {
           <ButtonMain text="View Packages" src="services"/>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
