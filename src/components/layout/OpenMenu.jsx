@@ -41,11 +41,11 @@ const OpenMenu = ({ toggled, toggle }) => {
       animate={toggled ? "open" : "close"}
       exit="close"
 
-      className='navbar-openMenu-aside'>
-      <ul className='flex flex-col items-center'>
+      className='navbar-openMenu-aside flex-center'>
+      <ul className='text-center'>
         {navItems.map((item, index) => (
           <li key={index}>
-            <NavLink to={item === 'home' ? '/' : item} className='leading-15 font-cormorant'>
+            <NavLink to={item === 'home' ? '/' : item} className='leading-15'>
               {typeof item === 'string' ? item : null}
             </NavLink>
           </li>

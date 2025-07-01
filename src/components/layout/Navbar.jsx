@@ -18,7 +18,7 @@ const Navbar = () => {
 
         {width >= 1200 ? (
             <nav className='navbar'>
-                <NavigationItems items={navItems} className={'flex justify-around'}/>
+                <NavigationItems items={navItems} className={'flex-center'}/>
             </nav>
         ) : (
             <nav className='navbar'>

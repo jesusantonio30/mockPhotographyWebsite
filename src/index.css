@@ -11,11 +11,11 @@
 
     a {
         text-transform: uppercase;
-        font-size: 18px;
+        font-size: clamp(0.8rem, 4.6vw, 1.125rem)
     }
 
     h1 {
-        font-size: 3.625rem;
+        font-size: clamp(2.6rem, 4.6vw, 3.625rem);
     }
 }
 
@@ -35,24 +35,62 @@
 }
 
 @layer components {
+    /* UNIVERSAL */
     .tm-logo {
         @apply w-[128px]
+    }
+
+    .button {
+        @apply tablet:w-40.25 h-15 mobile:w-42.25 bg-sandrift text-lg font-extralight uppercase text-white
+    }
+
+    .flex-center {
+        @apply flex justify-around items-center
     }
 
     /* NAVBAR */
 
     .navbar {
-        @apply bg-white opacity-85 p-6
+        @apply bg-white opacity-85 p-6 fixed left-0 right-0 z-50
     }
 
     .navbar-openMenu-aside {
-        @apply flex justify-center items-center bg-[#F2F2F2] absolute w-full h-screen left-0 tablet:p-6 mobile:p-3 origin-top overflow-hidden
+        @apply bg-[#F2F2F2] absolute w-full h-screen left-0 mt-6 origin-top overflow-hidden
     }
 
+    /* MAIN CONTAINER */
+
+    .main-container {
+        @apply max-w-360 mx-auto desktop:px-10 mobile:px-5 mobile:bg-red-500 tablet:bg-green-500 desktop:bg-white
+    }
+
+        /* HOME */
+
+            /* HERO */
+            .hero {
+                @apply relative bg-[url('./assets/Images/TessaMorgan.jpg')] bg-position-[center_50%] bg-cover
+                bg-no-repeat h-screen w-full
+            }
+
+            .overlay {
+                @apply bg-black/30 h-full w-full
+            }
+
+            .hero-content-wrapper {
+                @apply desktop:w-7/10 tablet:w-76/100 flex flex-col items-center
+            }
+
+            .hero-timeless {
+                @apply font-vibes text-vanilla text-[clamp(2.5rem,4.6vw,3.5rem)] font-extralight
+            }
+
+            .hero-header {
+                @apply font-light text-white text-center mb-6
+            }
 
     /* FOOTER */
     .footer {
-        @apply flex flex-col
+        @apply flex flex-col desktop:px-10 mobile:px-5
     }
 
     .footer-nav {
