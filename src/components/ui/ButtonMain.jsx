@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
-const ButtonMain = ( {text, src} ) => {
+const ButtonMain = ( {text, src, child} ) => {
   return (
     <Link to={src}>
-        <button type="button" className='button'>
+        <motion.button variants={child} type="button" className='button'>
             {text}
-        </button>
+        </motion.button>
     </Link>
   )
 }

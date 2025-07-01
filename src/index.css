@@ -68,8 +68,8 @@
 
             /* HERO */
             .hero {
-                @apply relative bg-[url('./assets/Images/TessaMorgan.jpg')] bg-position-[center_50%] bg-cover
-                bg-no-repeat h-screen w-full
+                @apply relative bg-[url('./assets/Images/TessaMorgan.jpg')] bg-top bg-cover
+                bg-no-repeat h-screen w-full max-h-176.25
             }
 
             .overlay {
