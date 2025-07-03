@@ -22,7 +22,7 @@ const Hero = () => {
   }
   return (
     <section className='hero'>
-      <div className="overlay flex-center">
+      <div className="overlay flex-around">
         <motion.div 
         variants={container}
         initial="unMount"

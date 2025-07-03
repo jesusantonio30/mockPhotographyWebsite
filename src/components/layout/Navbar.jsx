@@ -18,7 +18,7 @@ const Navbar = () => {
 
         {width >= 1200 ? (
             <nav className='navbar'>
-                <NavigationItems items={navItems} className={'flex-center'}/>
+                <NavigationItems items={navItems} className={'flex-around'}/>
             </nav>
         ) : (
             <nav className='navbar'>
@@ -29,7 +29,7 @@ const Navbar = () => {
                             <TMLogo className='tm-logo'/>
                         </NavLink>
                     </li>
-                    <li className={'ml-auto pr-10'}>
+                    <li className={'mobile-hamburger'}>
                         <HamburgerComponent 
                             open={open}
                             setOpen={setOpen}

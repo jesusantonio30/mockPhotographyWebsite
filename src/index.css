@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 @layer base {
@@ -29,9 +30,11 @@
 
     --font-vibes: "Great Vibes", cursive;
     --font-cormorant: "Cormorant Garamond", serif;
+    --font-raleway: "Raleway", sans-serif;
 
     --color-vanilla: #D1BEA1;
     --color-sandrift: #A89982;
+    --color-mushroom: #BBA085;
 }
 
 @layer components {
@@ -44,18 +47,26 @@
         @apply tablet:w-40.25 h-15 mobile:w-42.25 bg-sandrift text-lg font-extralight uppercase text-white
     }
 
-    .flex-center {
+    .flex-around {
         @apply flex justify-around items-center
+    }
+
+    .flex-center {
+        @apply flex justify-center items-center
     }
 
     /* NAVBAR */
 
     .navbar {
-        @apply bg-white opacity-85 p-6 fixed left-0 right-0 z-50
+        @apply bg-white opacity-85 p-6 tablet:fixed left-0 right-0 z-50
+    }
+
+    .mobile-hamburger {
+        @apply ml-auto tablet:pr-10 mobile:pr-5
     }
 
     .navbar-openMenu-aside {
-        @apply bg-[#F2F2F2] absolute w-full h-screen left-0 mt-6 origin-top overflow-hidden
+        @apply bg-[#F2F2F2] absolute w-full h-[calc(100vh-96px)] left-0 mt-6 origin-top overflow-hidden z-100
     }
 
     /* MAIN CONTAINER */
@@ -68,7 +79,7 @@
 
             /* HERO */
             .hero {
-                @apply relative bg-[url('./assets/Images/TessaMorgan.jpg')] bg-top bg-cover
+                @apply tablet:relative bg-[url('./assets/Images/TessaMorgan.jpg')] bg-top bg-cover
                 bg-no-repeat h-screen w-full max-h-176.25
             }
 
@@ -86,6 +97,19 @@
 
             .hero-header {
                 @apply font-light text-white text-center mb-6
+            }
+
+            /* FILLER */
+            .filler {
+                @apply flex flex-col items-center px-10 py-20 gap-5
+            }
+
+            .award {
+                @apply text-xl tracking-[15px] uppercase text-mushroom font-raleway max-w-6/10 text-center leading-12
+            }
+
+            .experience {
+                @apply max-w-150 text-[clamp(2.125rem,4vw,3rem)] text-center leading-15 font-extralight
             }
 
     /* FOOTER */

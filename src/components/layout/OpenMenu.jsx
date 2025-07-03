@@ -41,7 +41,7 @@ const OpenMenu = ({ toggled, toggle }) => {
       animate={toggled ? "open" : "close"}
       exit="close"
 
-      className='navbar-openMenu-aside flex-center'>
+      className='navbar-openMenu-aside flex-around'>
       <ul className='text-center'>
         {navItems.map((item, index) => (
           <li key={index}>
