@@ -8,6 +8,7 @@
         font-size: 16px;
         font-family: "Cormorant Garamond", serif;
         color: #1f1f1f;
+        text-align: center;
     }
 
     a {
@@ -95,7 +96,7 @@
                 }
 
                 .hero-header {
-                    @apply font-light text-white text-center mb-6
+                    @apply font-light text-white mb-6
                 }
 
             /* FILLER */
@@ -104,11 +105,11 @@
                 }
 
                 .award {
-                    @apply text-xl tracking-[15px] uppercase text-mushroom font-raleway max-w-6/10 text-center leading-12
+                    @apply text-xl tracking-[15px] uppercase text-mushroom font-raleway max-w-6/10 leading-12
                 }
 
                 .experience {
-                    @apply max-w-150 text-[clamp(2.125rem,4vw,3rem)] text-center leading-15 font-extralight
+                    @apply max-w-150 text-[clamp(2.125rem,4vw,3rem)] leading-15 font-extralight
                 }
 
     /* FOOTER */
@@ -133,7 +134,7 @@
     }
 
         .footer-contents-stack-text {
-            @apply text-center desktop:max-w-6/10 mobile:max-w-8/10
+            @apply desktop:max-w-6/10 mobile:max-w-8/10
         }
 
     .footer-contents-socials {
