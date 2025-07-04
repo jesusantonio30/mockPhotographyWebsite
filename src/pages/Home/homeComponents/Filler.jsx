@@ -1,39 +1,24 @@
 import React from 'react';
-import { motion, easeIn } from 'framer-motion';
+import { useOutletContext } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
 
 const Filler = () => {
-    const container = {
-        unMount: {y: 20, opacity: 0},
-        mount: {
-            y: 0, 
-            opacity: 1,
-            transition: {
-                duration: 2, 
-                ease: easeIn, 
-                staggerChildren: 0.8,
-            }
-        },
-    }
 
-    const child = {
-        unMount: {opacity: 0},
-        mount: {opacity: 1}
-    }
+    const { container, child } = useOutletContext();
+
   return (
     <motion.section 
-        variants={container}
+    variants={container} 
         initial="unMount"
         animate="mount"
-
-        className="filler">
-        <motion.h4 
-            variants={child}
-            className='award'>
+    className="filler">
+        <motion.h4 className='award'
+            variants={child} >
             Award Winning
         </motion.h4>
-        <motion.h2 
-            variants={child}
-            className='experience'>
+        <motion.h2 className='experience'
+            variants={child} >
             Experience the perfect blend of creativity and elegance in every frame.
         </motion.h2>
     </motion.section>

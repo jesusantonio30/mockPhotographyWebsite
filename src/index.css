@@ -78,39 +78,38 @@
         /* HOME */
 
             /* HERO */
-            .hero {
-                @apply tablet:relative bg-[url('./assets/Images/TessaMorgan.jpg')] bg-top bg-cover
-                bg-no-repeat h-screen w-full max-h-176.25
-            }
+                .hero {
+                    @apply tablet:relative h-screen w-full max-h-176.25 z-0
+                }
 
-            .overlay {
-                @apply bg-black/30 h-full w-full
-            }
+                .overlay {
+                    @apply bg-black/20 relative h-full w-full z-10
+                }
 
-            .hero-content-wrapper {
-                @apply desktop:w-7/10 tablet:w-76/100 flex flex-col items-center
-            }
+                .hero-content-wrapper {
+                    @apply desktop:w-6/10 tablet:w-76/100 flex flex-col items-center
+                }
 
-            .hero-timeless {
-                @apply font-vibes text-vanilla text-[clamp(2.5rem,4.6vw,3.5rem)] font-extralight
-            }
+                .hero-timeless {
+                    @apply font-vibes text-vanilla text-[clamp(2.5rem,4.6vw,3.5rem)] font-extralight
+                }
 
-            .hero-header {
-                @apply font-light text-white text-center mb-6
-            }
+                .hero-header {
+                    @apply font-light text-white text-center mb-6
+                }
 
             /* FILLER */
-            .filler {
-                @apply flex flex-col items-center px-10 py-20 gap-5
-            }
+                .filler {
+                    @apply flex flex-col items-center px-10 py-20 gap-5
+                }
 
-            .award {
-                @apply text-xl tracking-[15px] uppercase text-mushroom font-raleway max-w-6/10 text-center leading-12
-            }
+                .award {
+                    @apply text-xl tracking-[15px] uppercase text-mushroom font-raleway max-w-6/10 text-center leading-12
+                }
 
-            .experience {
-                @apply max-w-150 text-[clamp(2.125rem,4vw,3rem)] text-center leading-15 font-extralight
-            }
+                .experience {
+                    @apply max-w-150 text-[clamp(2.125rem,4vw,3rem)] text-center leading-15 font-extralight
+                }
 
     /* FOOTER */
     .footer {
@@ -122,7 +121,7 @@
     }
 
     .footer-nav-ul {
-        @apply flex mobile:flex-col mobile:items-center mobile:gap-6 desktop:flex-row desktop:justify-around
+        @apply flex mobile:flex-col mobile:items-center mobile:gap-6 desktop:flex-row desktop:justify-around w-full
     }
 
     .footer-contents {

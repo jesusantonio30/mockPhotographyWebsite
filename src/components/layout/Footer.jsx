@@ -3,7 +3,6 @@ import { navItems } from '../../utils/NavArray'
 import { arrangeArr } from '../../utils/Helpers/arrayHelpers'
 import useWindowWidth from '../../hooks/useWindowWidth'
 import NavigationItems from '../ui/NavigationItems'
-import { NavLink } from 'react-router-dom'
 import FlowerIcon from '../../assets/Icons/tessaMorgan.svg?react'
 import FacebookIcon from '../../assets/Icons/facebook.svg?react'
 import LinkedInIcon from '../../assets/Icons/linkedin.svg?react'
@@ -14,7 +13,6 @@ import YTIcon from '../../assets/Icons/youtube.svg?react'
 const Footer = () => {
 
   const width = useWindowWidth();
-
   const newNavItems = arrangeArr(navItems, item => typeof item === 'object');
 
   return (
