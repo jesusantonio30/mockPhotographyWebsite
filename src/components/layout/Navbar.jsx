@@ -4,7 +4,7 @@ import TMLogo from '../../assets/Icons/TM-logo.svg?react'
 import { navItems } from '../../utils/NavArray';
 import NavigationItems from '../ui/NavigationItems';
 import useWindowWidth from '../../hooks/useWindowWidth';
-import HamburgerComponent from './HamburgerComponent';
+import HamburgerComponent from '../ui/HamburgerComponent';
 import OpenMenu from './OpenMenu';
 import { AnimatePresence } from 'framer-motion';
 

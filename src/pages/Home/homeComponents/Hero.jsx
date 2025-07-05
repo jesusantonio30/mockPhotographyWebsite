@@ -34,7 +34,7 @@ const Hero = () => {
   return (
     <section className='hero'>
 {/* ANIMATED BACKGROUND */}
-      <motion.div className="absolute inset-0 "
+      <motion.div className="absolute inset-0"
         initial={{y: 20, opacity: 0}}
         animate={{y: 0, opacity: 1}}
         transition={{duration: 1, ease: "easeIn"}}
