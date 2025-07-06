@@ -6,8 +6,8 @@ import ButtonMain from '../../../components/ui/ButtonMain'
 
 const Services = () => {
   return (
-    <section className="services flex flex-col gap-10 py-20">
-        <div className="title-wrapper flex flex-col items-center">
+    <section className="services">
+        <div className="title-wrapper">
           <h4 className='award'>
             Services
           </h4>
@@ -15,7 +15,7 @@ const Services = () => {
             Photography Packages
           </h2>
         </div>
-        <div className="service-card-container flex desktop:justify-around desktop:flex-row desktop:w-full mobile:flex-col tablet:w-6/10 mobile:m-auto mobile:w-full gap-x-6">
+        <div className="service-card-container">
           {services.map((service) => (
             <Link className='w-full' to={'services'}>
               <ServiceCard

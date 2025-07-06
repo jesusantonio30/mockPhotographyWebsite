@@ -130,6 +130,32 @@
                 .about-content {
                     @apply flex flex-col flex-1/2 items-center gap-6 p-10
                 }
+            
+            /* SERVICES */
+                .services {
+                    @apply flex flex-col gap-10 py-20
+                }
+
+                .title-wrapper {
+                    @apply flex flex-col items-center
+                }
+
+                .service-card-container {
+                    @apply flex desktop:justify-around desktop:flex-row desktop:w-full mobile:flex-col tablet:w-6/10 mobile:m-auto mobile:w-full gap-x-6
+                }
+
+                /* SERVICE CARDS */
+                    .service-card-article {
+                        @apply flex-1/3 flex flex-col h-136.75 p-3 border-1 border-cardBorder
+                    }
+
+                    .service-card-content {
+                        @apply flex flex-col justify-around flex-1/2 bg-cardBg
+                    }
+
+                    .card-header {
+                        @apply font-vibes capitalize text-4xl
+                    }
 
     /* FOOTER */
     .footer {

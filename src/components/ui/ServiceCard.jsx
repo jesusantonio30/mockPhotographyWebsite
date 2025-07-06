@@ -2,7 +2,7 @@ import React from 'react'
 
 const ServiceCard = ({ coverImg, serviceType, cardDecor }) => {
   return (
-    <article className='flex-1/3 flex flex-col h-136.75 p-3 border-1 border-cardBorder'>
+    <article className='service-card-article'>
         <div className='w-full flex-1/2'
             style={{
                 backgroundImage: `url(${coverImg})`,
@@ -11,8 +11,8 @@ const ServiceCard = ({ coverImg, serviceType, cardDecor }) => {
                 backgroundRepeat: "no-repeat"
             }}
         />
-        <div className="service-content flex flex-col justify-around flex-1/2 bg-cardBg">
-            <h4 className='font-vibes capitalize text-4xl'>
+        <div className="service-card-content">
+            <h4 className='card-header'>
             {serviceType}
             </h4>
             <img className='h-28.5' src={cardDecor} />
