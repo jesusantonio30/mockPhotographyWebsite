@@ -3,18 +3,30 @@ import AboutImg from '../../../assets/Images/TessaAbout.jpg';
 import Quote from '../../../assets/Icons/QuoteDecor.svg?react';
 import Underline from '../../../assets/Icons/UnderlineDecor.svg?react';
 import ButtonMain from '../../../components/ui/ButtonMain';
+import { motion } from 'framer-motion';
+import { useOutletContext } from 'react-router-dom';
 
 const About = () => {
+
+  const { container, child } = useOutletContext();
+
   return (
-    <section className="about">
-      <div className='flex-1/2'
+    <motion.section className="about"
+      variants={container} 
+        initial="unMount"
+        animate="mount"
+    >
+      <motion.div className='flex-1/2'
+        variants={child}
         style={{
           backgroundImage: `url(${AboutImg})`,
           backgroundSize: 'cover',
           backgroundPosition: '50% 65%',
           backgroundRepeat: 'no-repeat'
         }} />
-      <article className='about-content'>
+      <motion.article className='about-content'
+        variants={child}
+      >
         <Quote className="w-20.75"/>
         <h2>
           Hello, My Name is Tessa
@@ -30,8 +42,8 @@ const About = () => {
         </p>
         <Underline className="w-67.5"/>
         <ButtonMain text={"Learn More"} src={"about"}/>
-      </article>
-    </section>
+      </motion.article>
+    </motion.section>
   )
 }
 
