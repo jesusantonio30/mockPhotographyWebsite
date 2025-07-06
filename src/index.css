@@ -115,6 +115,15 @@
                 .experience {
                     @apply max-w-150 leading-15 font-extralight
                 }
+            
+            /* ABOUT */
+                .about {
+                    @apply flex desktop:flex-row mobile:flex-col desktop:max-h-158.25 mobile:h-364.25
+                }
+
+                .about-content {
+                    @apply flex flex-col flex-1/2 items-center gap-6 p-10
+                }
 
     /* FOOTER */
     .footer {

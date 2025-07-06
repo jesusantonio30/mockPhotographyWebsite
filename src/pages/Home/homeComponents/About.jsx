@@ -6,7 +6,7 @@ import ButtonMain from '../../../components/ui/ButtonMain';
 
 const About = () => {
   return (
-    <section className="about flex desktop:flex-row mobile:flex-col desktop:max-h-158.25 mobile:h-364.25">
+    <section className="about">
       <div className='flex-1/2'
         style={{
           backgroundImage: `url(${AboutImg})`,
@@ -14,7 +14,7 @@ const About = () => {
           backgroundPosition: '50% 65%',
           backgroundRepeat: 'no-repeat'
         }} />
-      <article className='flex flex-col flex-1/2 items-center gap-6 p-10'>
+      <article className='about-content'>
         <Quote className="w-20.75"/>
         <h2>
           Hello, My Name is Tessa
