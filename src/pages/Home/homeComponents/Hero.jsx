@@ -32,21 +32,18 @@ const Hero = () => {
   }
 
   return (
-    <section className='hero'>
-{/* ANIMATED BACKGROUND */}
-      <motion.div className="absolute inset-0"
-        initial={{y: 20, opacity: 0}}
-        animate={{y: 0, opacity: 1}}
-        transition={{duration: 1, ease: "easeIn"}}
-        style={{
-          backgroundImage: `url(${TessaMorganImg})`,
-          backgroundPosition: "top",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat"
-        }}
-      />
-
-      {/* CONTENT */}
+    <motion.section className='hero'
+      initial={{y: 20, opacity: 0}}
+      animate={{y: 0, opacity: 1}}
+      transition={{duration: 1, ease: "easeIn"}}
+      style={{
+        backgroundImage: `url(${TessaMorganImg})`,
+        backgroundPosition: "top",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat"
+      }}
+      >
+        
       <motion.div className="overlay flex-around"
         variants={container}
         initial="unMount"
@@ -67,7 +64,7 @@ const Hero = () => {
         </div>
       </motion.div>
 
-    </section>
+    </motion.section>
   )
 }
 

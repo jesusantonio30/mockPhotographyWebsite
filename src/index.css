@@ -63,7 +63,7 @@
     /* NAVBAR */
 
     .navbar {
-        @apply bg-white opacity-85 p-6 tablet:fixed left-0 right-0 z-50
+        @apply bg-white opacity-90 p-6 mobile:sticky tablet:fixed left-0 right-0 z-50
     }
 
     .mobile-hamburger {
