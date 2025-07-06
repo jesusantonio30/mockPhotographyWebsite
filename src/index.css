@@ -133,7 +133,7 @@
             
             /* SERVICES */
                 .services {
-                    @apply flex flex-col gap-10 py-20
+                    @apply flex flex-col items-center gap-10 py-20
                 }
 
                 .title-wrapper {
