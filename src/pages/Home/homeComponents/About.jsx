@@ -6,20 +6,20 @@ import ButtonMain from '../../../components/ui/ButtonMain';
 
 const About = () => {
   return (
-    <section className="about grid grid-cols-2 h-158.25">
-      <div
+    <section className="about flex desktop:flex-row mobile:flex-col desktop:max-h-158.25 mobile:h-364.25">
+      <div className='flex-1/2'
         style={{
           backgroundImage: `url(${AboutImg})`,
           backgroundSize: 'cover',
           backgroundPosition: '50% 65%',
           backgroundRepeat: 'no-repeat'
         }} />
-      <article className='grid place-items-center p-10'>
+      <article className='flex flex-col flex-1/2 items-center gap-6 p-10'>
         <Quote className="w-20.75"/>
         <h2>
           Hello, My Name is Tessa
         </h2>
-        <p className='text-left leading-7'>
+        <p className='leading-7'>
           I'm a passionate wedding photographer based in beautiful California. 
           With over a decade of experience, I have dedicated my career to 
           capturing the unique love stories of couples from all walks of life. 
