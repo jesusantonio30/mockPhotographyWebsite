@@ -23,6 +23,10 @@
     h2 {
         font-size: clamp(2.125rem, 4vw, 3rem);
     }
+    h4 {
+        text-transform: uppercase;
+        font-size: clamp(0.9rem, 1.67vw, 1.25rem);
+    }
 }
 
 
