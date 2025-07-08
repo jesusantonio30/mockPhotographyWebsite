@@ -140,22 +140,44 @@
                     @apply flex flex-col items-center
                 }
 
-                .service-card-container {
-                    @apply flex desktop:justify-around desktop:flex-row desktop:w-full mobile:flex-col tablet:w-6/10 mobile:m-auto mobile:w-full gap-x-6
-                }
-
                 /* SERVICE CARDS */
+                    .service-card-container {
+                        @apply flex desktop:justify-around desktop:flex-row desktop:w-full mobile:flex-col tablet:w-6/10 mobile:m-auto mobile:w-full gap-x-6
+                    }
+
                     .service-card-article {
                         @apply flex-1/3 flex flex-col h-136.75 p-3 border-1 border-cardBorder
+                    }
+
+                    .service-card-bg {
+                        @apply w-full flex-1/2
                     }
 
                     .service-card-content {
                         @apply flex flex-col justify-around flex-1/2 bg-cardBg
                     }
 
-                    .card-header {
+                    .service-card-header {
                         @apply font-vibes capitalize text-4xl
                     }
+
+                        /* SERVICE CARDS:HOVER */
+                        .service-card-article:hover {
+                            @apply shadow-xl shadow-yellow-900/5
+                        }
+
+                        .service-card-article:hover .service-card-bg {
+                            @apply transition-transform duration-200 ease-in-out scale-102
+                        }
+
+                        .service-card-article:hover .service-card-text  {
+                            @apply text-sandrift transition-colors duration-200
+                        }
+
+                        
+
+
+
 
     /* FOOTER */
     .footer {
