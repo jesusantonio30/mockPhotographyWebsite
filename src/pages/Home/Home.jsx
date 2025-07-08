@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from './homeComponents/Hero';
-import Filler from './homeComponents/Filler';
+import Filler from '../../components/ui/Filler';
 import About from './homeComponents/About';
 import Services from './homeComponents/Services';
 
@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <Filler />
+      <Filler className={"filler"} smText={"Award Winning"} lgText={"Experience the perfect blend of creativity and elegance in every frame."}/>
       <About />
       <Services />
     </>

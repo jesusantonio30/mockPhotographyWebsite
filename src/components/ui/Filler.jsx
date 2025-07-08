@@ -3,7 +3,7 @@ import { useOutletContext } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 
-const Filler = () => {
+const Filler = ( {smText, lgText, className} ) => {
 
     const { container, child } = useOutletContext();
 
@@ -12,14 +12,14 @@ const Filler = () => {
     variants={container} 
         initial="unMount"
         animate="mount"
-    className="filler">
+    className={className}>
         <motion.h4 className='award'
             variants={child} >
-            Award Winning
+            {smText}
         </motion.h4>
         <motion.h2 className='experience'
             variants={child} >
-            Experience the perfect blend of creativity and elegance in every frame.
+            {lgText}
         </motion.h2>
     </motion.section>
   )
