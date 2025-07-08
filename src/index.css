@@ -49,14 +49,20 @@
 }
 
 @layer components {
+
     /* UNIVERSAL */
     .tm-logo {
         @apply w-[128px]
     }
 
     .button {
-        @apply w-[clamp(115px,12vw,161px)] h-[clamp(43px,5vw,60px)] bg-sandrift text-[clamp(0.8rem,1.5vw,1.125rem)] font-extralight uppercase text-white
+        @apply w-[clamp(115px,12vw,161px)] h-[clamp(43px,5vw,60px)] bg-sandrift text-[clamp(0.8rem,1.5vw,1.125rem)] 
+        font-extralight uppercase text-white cursor-pointer
     }
+
+        .button:hover {
+            @apply drop-shadow-xl drop-shadow-yellow-900/10 scale-101 transition-transform duration-300
+        }
 
     .flex-around {
         @apply flex justify-around items-center
@@ -83,7 +89,8 @@
     /* MAIN CONTAINER */
 
     .main-container {
-        @apply max-w-360 mx-auto desktop:px-10 mobile:px-5 mobile:bg-red-500 tablet:bg-green-500 desktop:bg-white
+        @apply max-w-360 mx-auto desktop:px-10 mobile:px-5 mobile:bg-red-500 tablet:bg-green-500 
+        desktop:bg-white
     }
 
         /* HOME */
@@ -142,7 +149,8 @@
 
                 /* SERVICE CARDS */
                     .service-card-container {
-                        @apply flex desktop:justify-around desktop:flex-row desktop:w-full mobile:flex-col tablet:w-6/10 mobile:m-auto mobile:w-full gap-x-6
+                        @apply flex desktop:justify-around desktop:flex-row desktop:w-full mobile:flex-col 
+                        tablet:w-6/10 mobile:m-auto mobile:w-full gap-x-6
                     }
 
                     .service-card-article {
