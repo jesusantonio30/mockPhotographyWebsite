@@ -93,6 +93,17 @@
         @apply max-w-360 mx-auto desktop:px-10 mobile:px-5 bg-background
     }
 
+        /* 
+            "> *" direct children of container, no nested children
+        */
+    .main-container > *:nth-child(odd) {
+        @apply bg-cardBg
+    }
+
+    .main-container > *:nth-child(even) {
+        @apply bg-white
+    }
+
         /* HOME */
 
             /* HERO */
@@ -118,7 +129,7 @@
 
             /* FILLER */
                 .filler {
-                    @apply flex flex-col items-center px-10 py-20 gap-5 bg-white
+                    @apply flex flex-col items-center px-10 py-20 gap-5
                 }
 
                 .award {
@@ -135,12 +146,12 @@
                 }
 
                 .about-content {
-                    @apply flex flex-col flex-1/2 items-center justify-center gap-6 p-10 bg-cardBg
+                    @apply flex flex-col flex-1/2 items-center justify-center gap-6 p-10
                 }
             
             /* SERVICES */
                 .services {
-                    @apply flex flex-col items-center gap-10 desktop:py-20 bg-white
+                    @apply flex flex-col items-center gap-10 desktop:py-20
                 }
 
                 .title-wrapper {
