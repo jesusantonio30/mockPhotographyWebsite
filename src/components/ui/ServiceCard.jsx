@@ -1,8 +1,13 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
-const ServiceCard = ({ coverImg, serviceType, cardDecor }) => {
+const ServiceCard = ({ coverImg, serviceType, cardDecor, childVariant }) => {
+
+    
+
   return (
-    <article className='service-card-article'>
+    <motion.article className='service-card-article'
+        variants={childVariant}>
         <div className='service-card-bg'
             style={{
                 backgroundImage: `url(${coverImg})`,
@@ -20,7 +25,7 @@ const ServiceCard = ({ coverImg, serviceType, cardDecor }) => {
                 Learn More
             </p>
         </div>
-    </article>
+    </motion.article>
   )
 }
 

@@ -4,12 +4,20 @@ import { services } from '../../../utils/ServicesArr'
 import Filler from '../../../components/ui/Filler'
 import ServiceCard from '../../../components/ui/ServiceCard'
 import ButtonMain from '../../../components/ui/ButtonMain'
+import { useOutletContext } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 const Services = () => {
+
+  const { container, child } = useOutletContext();
+
   return (
-    <section className="services">
+    <motion.section className="services"
+      variants={container} 
+        initial="unMount"
+        animate="mount">
         <Filler className={"title-wrapper"} smText={"Services"} lgText={"Photography Packages"}/>
-        <div className="service-card-container">
+        <motion.div className="service-card-container">
           {services.map((service) => (
             <Link className='w-full' to={'services'}>
               <ServiceCard
@@ -17,12 +25,13 @@ const Services = () => {
                 coverImg={service.coverImg}
                 serviceType={service.serviceType}
                 cardDecor={service.cardDecor}
+                childVariant={child}
               />
             </Link>
           ))}
-        </div>
+        </motion.div>
         <ButtonMain src={'services'} text={'New Details'}/>
-    </section>
+    </motion.section>
   )
 }
 
