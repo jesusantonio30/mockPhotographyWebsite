@@ -5,7 +5,7 @@ import Flower from '../../../assets/Icons/MarketingFlower.svg?react'
 const Marketing = () => {
   return (
     <section className="marketing">
-        <div className='desktop:flex-3/4 mobile:flex-1'
+        <div className='marketing-couple'
             style={{
                 backgroundImage: `url(${MarketingCouple})`,
                 backgroundSize: 'cover',
