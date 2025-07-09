@@ -193,6 +193,23 @@
                         .service-card-article:hover .service-card-text  {
                             @apply text-sandrift transition-colors duration-200
                         }
+            
+            /* MARKETING */
+                .marketing {
+                    @apply max-h-212.5 h-screen flex relative
+                }
+
+                .marketing-space {
+                    @apply flex-1/4
+                }
+
+                .marketing-content {
+                    @apply absolute z-10 top-33.5 right-11.5 w-147 h-145.25 bg-white opacity-90 flex flex-col items-center justify-center
+                }
+
+                .marketing-font {
+                    @apply font-vibes capitalize text-4xl py-4
+                }
 
                         
 
