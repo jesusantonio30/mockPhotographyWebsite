@@ -23,6 +23,9 @@
     h2 {
         font-size: clamp(2.125rem, 4vw, 3rem);
     }
+    h3 {
+        font-size: clamp(1.6rem, 3vw, 2.25rem);
+    }
     h4 {
         text-transform: uppercase;
         font-size: clamp(0.9rem, 1.67vw, 1.25rem);
@@ -76,7 +79,7 @@
     /* NAVBAR */
 
     .navbar {
-        @apply bg-white opacity-90 p-6 mobile:sticky tablet:fixed left-0 right-0 z-50
+        @apply bg-white opacity-90 p-6 desktop:fixed mobile:sticky top-0 left-0 right-0 z-50
     }
 
     .mobile-hamburger {
@@ -151,7 +154,7 @@
             
             /* SERVICES */
                 .services {
-                    @apply flex flex-col items-center gap-10 desktop:py-20
+                    @apply flex flex-col items-center gap-10 py-20
                 }
 
                 .title-wrapper {
@@ -200,15 +203,17 @@
                 }
 
                 .marketing-space {
-                    @apply flex-1/4
+                    @apply desktop:flex-1/4
                 }
 
                 .marketing-content {
-                    @apply absolute z-10 top-33.5 right-11.5 w-147 h-145.25 bg-white opacity-90 flex flex-col items-center justify-center
+                    @apply absolute z-10 desktop:top-33.5 desktop:right-11.5 mobile:left-1/2 mobile:top-1/2 
+                    desktop:translate-0 mobile:-translate-1/2 desktop:w-147 tablet:w-149.5 mobile:w-79.5 
+                    h-145.25 bg-white opacity-90 flex flex-col items-center justify-center
                 }
 
                 .marketing-font {
-                    @apply font-vibes capitalize text-4xl py-4
+                    @apply font-vibes capitalize py-4
                 }
 
                         
@@ -218,7 +223,8 @@
 
     /* FOOTER */
     .footer {
-        @apply flex flex-col desktop:px-10 mobile:px-5 desktop:pb-10 mobile:pb-5 max-w-360 mx-auto bg-background
+        @apply flex flex-col desktop:px-10 mobile:px-5 desktop:pb-10 mobile:pb-5 max-w-360 mx-auto 
+        bg-background
     }
 
     .footer-nav {
@@ -226,7 +232,8 @@
     }
 
     .footer-nav-ul {
-        @apply flex mobile:flex-col mobile:items-center mobile:gap-6 desktop:flex-row desktop:justify-around w-full
+        @apply flex mobile:flex-col mobile:items-center mobile:gap-6 desktop:flex-row desktop:justify-around 
+        w-full
     }
 
     .footer-contents {

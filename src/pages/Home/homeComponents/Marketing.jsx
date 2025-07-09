@@ -5,7 +5,7 @@ import Flower from '../../../assets/Icons/MarketingFlower.svg?react'
 const Marketing = () => {
   return (
     <section className="marketing">
-        <div className='flex-3/4'
+        <div className='desktop:flex-3/4 mobile:flex-1'
             style={{
                 backgroundImage: `url(${MarketingCouple})`,
                 backgroundSize: 'cover',
@@ -15,9 +15,9 @@ const Marketing = () => {
         <div className="marketing-space" />
         <div className='marketing-content'>
             <Flower className="w-9.25"/>
-            <h4 className='marketing-font'>
+            <h3 className='marketing-font'>
                 Creative, Passionate, Artistic.
-            </h4>
+            </h3>
             <p className='max-w-5/10'>
                 I will ensure your wedding day memories are preserved in
                 stunning, timeless photographs that you will cherish for 
