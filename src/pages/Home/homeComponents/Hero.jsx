@@ -1,7 +1,7 @@
 import React from 'react';
 import ButtonMain from '../../../components/ui/ButtonMain';
 import { motion } from 'framer-motion';
-import TessaMorganImg from '../../../assets/Images/TessaMorgan.jpg';
+import TessaMorganImg from '../../../assets/Images/TessaMorgan.webp';
 
 const Hero = () => {
 
@@ -36,14 +36,14 @@ const Hero = () => {
       initial={{y: 20, opacity: 0}}
       animate={{y: 0, opacity: 1}}
       transition={{duration: 1, ease: "easeIn"}}
-      style={{
-        backgroundImage: `url(${TessaMorganImg})`,
-        backgroundPosition: "top",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat"
-      }}
       >
-        
+      
+      <img 
+        src={TessaMorganImg}
+        className='hero-img'
+        fetchPriority='high'
+      />
+
       <motion.div className="overlay flex-around"
         variants={container}
         initial="unMount"

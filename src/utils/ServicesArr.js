@@ -1,6 +1,6 @@
-import CoupleSunset from '../assets/Images/coupleSunset.jpg'
-import CoupleWeddingCeremony from '../assets/Images/coupleWeddingCeremony.jpg'
-import LadyOutdoor from '../assets/Images/ladyOutdoor.jpg'
+import CoupleSunset from '../assets/Images/CoupleSunset.webp'
+import CoupleWeddingCeremony from '../assets/Images/CoupleWeddingCeremony.webp'
+import LadyOutdoor from '../assets/Images/LadyOutdoor.webp'
 
 import Flower1 from '../assets/Icons/flower1.svg'
 import Flower2 from '../assets/Icons/flower2.svg'

@@ -4,6 +4,7 @@ import Filler from '../../components/ui/Filler';
 import About from './homeComponents/About';
 import Services from './homeComponents/Services';
 import Marketing from './homeComponents/Marketing';
+import Featured from './homeComponents/Featured';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <About />
       <Services />
       <Marketing />
+      <Featured />
     </>
   )
 }

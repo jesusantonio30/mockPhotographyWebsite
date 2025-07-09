@@ -111,11 +111,15 @@
 
             /* HERO */
                 .hero {
-                    @apply tablet:relative h-screen w-full max-h-176.25 z-0
+                    @apply relative h-screen w-full max-h-176.25 z-0
                 }
 
                 .overlay {
                     @apply bg-black/20 relative h-full w-full z-10
+                }
+
+                .hero-img {
+                    @apply absolute w-full h-full object-cover object-top max-h-176.25
                 }
 
                 .hero-content-wrapper {

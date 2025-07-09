@@ -1,5 +1,5 @@
 import React from 'react'
-import MarketingCouple from '../../../assets/Images/marketingCouple.jpg'
+import MarketingCouple from '../../../assets/Images/MarketingCouple.webp'
 import Flower from '../../../assets/Icons/MarketingFlower.svg?react'
 
 const Marketing = () => {

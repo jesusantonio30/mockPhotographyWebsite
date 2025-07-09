@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutImg from '../../../assets/Images/TessaAbout.jpg';
+import AboutImg from '../../../assets/Images/TessaAbout.webp';
 import Quote from '../../../assets/Icons/QuoteDecor.svg?react';
 import Underline from '../../../assets/Icons/UnderlineDecor.svg?react';
 import ButtonMain from '../../../components/ui/ButtonMain';
@@ -16,14 +16,11 @@ const About = () => {
         initial="unMount"
         animate="mount"
     >
-      <motion.div className='flex-1/2'
+      <motion.img className='flex-1/2 object-cover object-[50%_65%] w-full h-full max-h-200'
         variants={child}
-        style={{
-          backgroundImage: `url(${AboutImg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: '50% 65%',
-          backgroundRepeat: 'no-repeat'
-        }} />
+        src={AboutImg}
+        fetchPriority='high'
+        />
       <motion.article className='about-content'
         variants={child}
       >
