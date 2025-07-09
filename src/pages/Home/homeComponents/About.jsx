@@ -16,7 +16,7 @@ const About = () => {
         initial="unMount"
         animate="mount"
     >
-      <motion.img className='flex-1/2 object-cover object-[50%_65%] w-full h-full max-h-200'
+      <motion.img className='about-img'
         variants={child}
         src={AboutImg}
         fetchPriority='high'

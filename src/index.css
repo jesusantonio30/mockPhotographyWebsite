@@ -152,6 +152,10 @@
                     @apply flex desktop:flex-row mobile:flex-col desktop:max-h-158.25 mobile:h-364.25
                 }
 
+                .about-img {
+                    @apply flex-1/2 object-cover object-[50%_65%] w-full h-full max-h-200
+                }
+
                 .about-content {
                     @apply flex flex-col flex-1/2 items-center justify-center gap-6 p-10
                 }
