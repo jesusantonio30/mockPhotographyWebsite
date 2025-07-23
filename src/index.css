@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @layer base {
@@ -42,6 +43,7 @@
 
     --font-vibes: "Great Vibes", cursive;
     --font-cormorant: "Cormorant Garamond", serif;
+    --font-cormorantSc: "Cormorant SC", serif;
     --font-raleway: "Raleway", sans-serif;
 
     --color-background: #F2F2F2;
